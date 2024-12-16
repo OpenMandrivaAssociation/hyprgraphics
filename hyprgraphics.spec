@@ -1,3 +1,6 @@
+%define libname %mklibname hyprgraphics
+%define devname %mklibname -d hyprgraphics
+
 Name:           hyprgraphics
 Version:        0.1.1
 Release:        1
@@ -17,10 +20,23 @@ BuildRequires:  pkgconfig(libwebp)
 BuildRequires:  pkgconfig(libjxl)
 BuildRequires:  pkgconfig(libmagic)
 
-Provides:       hyprgraphics-devel
-
 %description
 Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
+
+%package -n %{libname}
+Summary:        Shared library for %{name}
+Provides:       hyprgraphics = %{EVRD}
+
+%description -n %{libname}
+This package contains the shared library files.
+
+%package -n %{devname}
+Summary:        Development files for %{name}
+Requires:	      %{libname} = %{EVRD}
+Provides:       hyprgraphics-devel = %{EVRD}
+
+%description -n %{devname}
+This package contains development files for %{name}.
 
 %prep
 %autosetup -p1
@@ -32,4 +48,10 @@ Hyprgraphics is a small C++ library with graphics / resource related utilities u
 %install
 %make_install -C build
 
-%files
+%files -n %{libname}
+%{_libdir}/libhyprgraphics.so.0*
+
+%files -n %{devname}
+%{_includedir}/hyprgraphics/
+%{_libdir}/libhyprgraphics.so
+%{_libdir}/pkgconfig/hyprgraphics.pc
