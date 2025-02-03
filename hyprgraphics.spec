@@ -3,7 +3,7 @@
 
 Name:           hyprgraphics
 Version:        0.1.1
-Release:        4
+Release:        5
 Summary:        Hyprland graphics / resource utilities 
 License:        GPL3.0
 Group:          Hyprland
