@@ -19,6 +19,7 @@ BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libwebp)
 BuildRequires:  pkgconfig(libjxl)
 BuildRequires:  pkgconfig(libmagic)
+BuildRequires:  pkgconfig(spng)
 
 %description
 Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
