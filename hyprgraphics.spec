@@ -2,8 +2,8 @@
 %define devname %mklibname -d hyprgraphics
 
 Name:           hyprgraphics
-Version:        0.1.3
-Release:        2
+Version:        0.1.4
+Release:        1
 Summary:        Hyprland graphics / resource utilities 
 License:        GPL3.0
 Group:          Hyprland
@@ -19,7 +19,7 @@ BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libwebp)
 BuildRequires:  pkgconfig(libjxl)
 BuildRequires:  pkgconfig(libmagic)
-BuildRequires:  pkgconfig(spng)
+BuildRequires:  pkgconfig(libpng)
 
 %description
 Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
