@@ -2,13 +2,13 @@
 %define devname %mklibname -d hyprgraphics
 
 Name:           hyprgraphics
-Version:        0.1.5
+Version:        0.1.6
 Release:        1
-Summary:        Hyprland graphics / resource utilities 
+Summary:        Hyprland graphics / resource utilities
 License:        GPL3.0
 Group:          Hyprland
 URL:            https://github.com/hyprwm/hyprgraphics
-Source0:        https://github.com/hyprwm/hyprlang/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(libunwind-llvm)
@@ -20,6 +20,7 @@ BuildRequires:  pkgconfig(libwebp)
 BuildRequires:  pkgconfig(libjxl)
 BuildRequires:  pkgconfig(libmagic)
 BuildRequires:  pkgconfig(libpng)
+BuildRequires:	pkgconfig(pangocairo)
 
 %description
 Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
