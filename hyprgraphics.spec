@@ -2,13 +2,13 @@
 %define devname %mklibname -d hyprgraphics
 
 Name:           hyprgraphics
-Version:        0.2.0
-Release:        2
+Version:        0.3.0
+Release:        1
 Summary:        Hyprland graphics / resource utilities
 License:        GPL3.0
 Group:          Hyprland
 URL:            https://github.com/hyprwm/hyprgraphics
-Source0:        https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v%{version}.tar.gz
+Source0:        https://github.com/hyprwm/hyprgraphics/archive/v%{version}/%{name}-v%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(libunwind-llvm)
@@ -43,11 +43,11 @@ This package contains development files for %{name}.
 
 %prep
 %autosetup -p1
- 
+
 %build
 %cmake
 %make_build
- 
+
 %install
 %make_install -C build
 
