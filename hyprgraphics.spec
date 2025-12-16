@@ -11,6 +11,7 @@ URL:            https://github.com/hyprwm/hyprgraphics
 Source0:        https://github.com/hyprwm/hyprgraphics/archive/v%{version}/%{name}-v%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  make
 BuildRequires:  pkgconfig(libunwind-llvm)
 BuildRequires:  pkgconfig(hyprutils)
 BuildRequires:  pkgconfig(pixman-1)
