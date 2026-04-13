@@ -2,7 +2,7 @@
 %define devname %mklibname -d hyprgraphics
 
 Name:           hyprgraphics
-Version:        0.5.0
+Version:        0.5.1
 Release:        1
 Summary:        Hyprland graphics / resource utilities
 License:        GPL3.0
