@@ -60,7 +60,7 @@ This package contains development files for %{name}.
 %make_install -C build
 
 %files -n %{libname}
-%{_libdir}/libhyprgraphics.so.5*
+%{_libdir}/libhyprgraphics.so.%{major}*
 %{_libdir}/libhyprgraphics.so.%{version}*
 
 %files -n %{devname}
